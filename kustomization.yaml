@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
 - deployment.yml
 images:
-- digest: sha256:d62684ab9ebf0f07b3344af3385338d6b6741a32dac72656c0503308dc46e826
+- digest: sha256:18526adde3d8cb9acf65d5b0a10e2b2576d301414dce872e579cb6ae9f9fffcb
   name: fnhsproduction.azurecr.io/frontend
