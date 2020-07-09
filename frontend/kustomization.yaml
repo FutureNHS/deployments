@@ -1,9 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- namespace.yaml
-- service.yaml
-- deployment.yaml
-images:
-- digest: sha256:9dc13a27e6763dc2ae1f90a2fa1784807bca5e92a63699657a5abecd74985c84
-  name: fnhsproduction.azurecr.io/frontend
