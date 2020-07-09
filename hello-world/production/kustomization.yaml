@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+patchesStrategicMerge:
+- deployment.yaml
+resources:
+- ../base
+images:
+- digest: sha256:635e923280b6441f1d016fc43640469bbd81484b312658e1cbb203aabf0017e1
+  name: fnhsproduction.azurecr.io/hello-world
