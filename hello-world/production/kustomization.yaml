@@ -3,7 +3,8 @@ kind: Kustomization
 patchesStrategicMerge:
 - deployment.yaml
 resources:
+- favourite-cuisine-sealed.yaml
 - ../base
 images:
-- digest: sha256:c8c4e2d16476c00b2fa4f8513104bc97756a4611d2afe212ee9240c1233aa2fc
+- digest: sha256:491e22552198a387e52da804353847723bc29e8877e836c9ad2d086a935cce3c
   name: fnhsproduction.azurecr.io/hello-world
