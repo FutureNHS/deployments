@@ -6,5 +6,5 @@ resources:
 - favourite-cuisine-sealed.yaml
 - ../base
 images:
-- digest: sha256:7284db8a820cce9d67ea62394762fbc1565ca8006d25a6de61e955d28699e241
+- digest: sha256:a8414bf8960cd1c7cfc22239ece3f1db73f7a405f6772672217823426b033f12
   name: fnhsproduction.azurecr.io/hello-world
