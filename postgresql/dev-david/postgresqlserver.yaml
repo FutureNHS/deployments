@@ -2,5 +2,6 @@ apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLServer
 metadata:
   name: postgresqlserver
+  namespace: postgresql
 spec:
   resourceGroup: platform-dev-david
