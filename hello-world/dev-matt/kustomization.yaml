@@ -1,8 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-  - ../base
 patchesStrategicMerge:
-  - deployment.yaml
+- deployment.yaml
 resources:
-  - favourite-cuisine-sealed.yaml
+- favourite-cuisine-sealed.yaml
+- ../base
+images:
+- digest: sha256:72c4f6d56ed6e978def828239d5352427ed74017f32608d56cbd31dabae9f46a
+  name: fnhsproduction.azurecr.io/hello-world
