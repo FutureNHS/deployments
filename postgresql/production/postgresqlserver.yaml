@@ -1,6 +1,7 @@
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLServer
 metadata:
+  # Must be globally unique across the whole of azure.
   name: fnhs-postgresqlserver-production
   namespace: postgresql
 spec:
