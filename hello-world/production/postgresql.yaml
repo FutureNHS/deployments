@@ -4,4 +4,4 @@ metadata:
   name: postgresqlserver-sample
   namespace: hello-world
 spec:
-  resourceGroup: platform-dev-declan
+  resourceGroup: platform-production
