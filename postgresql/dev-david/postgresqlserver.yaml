@@ -39,7 +39,7 @@ metadata:
   namespace: hello-world
 spec:
   resourceGroup: platform-dev-david
-  server: fnhs-postgresqlserver-david
+  server: postgresql/fnhs-postgresqlserver-david
 ---
 # https://github.com/Azure/azure-service-operator/blob/217c62e5f65c94b753fa62c9a87eda210c1a8e5f/config/samples/azure_v1alpha1_postgresqluser.yaml
 apiVersion: azure.microsoft.com/v1alpha1
@@ -48,7 +48,7 @@ metadata:
   name: psqluser-hello-world
   namespace: hello-world
 spec:
-  server: fnhs-postgresqlserver-david
+  server: postgresql/fnhs-postgresqlserver-david
   dbName: postgresqldatabase-hello-world
   resourceGroup: platform-dev-david
   # The Azure Database for PostgreSQL server is created with the 3 default roles defined.
