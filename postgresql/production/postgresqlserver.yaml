@@ -1,7 +1,7 @@
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLServer
 metadata:
-  name: postgresqlserver
+  name: fnhs-postgresqlserver-production
   namespace: postgresql
 spec:
   location: westeurope
