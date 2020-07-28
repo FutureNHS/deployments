@@ -1,15 +1,15 @@
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLServer
 metadata:
-  name: postgresqlserver-hello-world-matt
+  name: postgresqlserver-hello-world
   namespace: hello-world
 spec:
-  resourceGroup: platform-dev-matt
+  resourceGroup: platform-dev
 ---
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLDatabase
 metadata:
-  name: postgresqldatabase-hello-world-matt
+  name: postgresqldatabase-hello-world
   namespace: hello-world
 spec:
-  resourceGroup: platform-dev-matt
+  resourceGroup: platform-dev
