@@ -19,6 +19,18 @@ spec:
   # to store the server admin credential secrets in
   #keyVaultToStoreSecrets: asoSecretKeyVault
 ---
+  apiVersion: azure.microsoft.com/v1alpha1
+  kind: PostgreSQLFirewallRule
+  metadata:
+    name: postgresqlfirewallrule-cluster
+    namespace: kratos
+  spec:
+    resourceGroup: platform-dev-david
+    server: fnhs-postgresqlserver-kratos-david
+    # FIXME: work out how to automatically find out what the cluster's IP range is.
+    startIpAddress: 51.124.86.187
+    endIpAddress: 51.124.86.187
+---
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLFirewallRule
 metadata:

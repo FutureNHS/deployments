@@ -19,6 +19,18 @@ spec:
   # to store the server admin credential secrets in
   #keyVaultToStoreSecrets: asoSecretKeyVault
 ---
+  apiVersion: azure.microsoft.com/v1alpha1
+  kind: PostgreSQLFirewallRule
+  metadata:
+    name: postgresqlfirewallrule-cluster
+    namespace: kratos
+  spec:
+    resourceGroup: platform-dev-$NAME
+    server: fnhs-postgresqlserver-kratos-$NAME
+    # FIXME: work out how to automatically find out what the cluster's IP range is.
+    startIpAddress: $CLUSTER_IP_ADDRESS
+    endIpAddress: $CLUSTER_IP_ADDRESS
+---
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLFirewallRule
 metadata:
@@ -27,8 +39,8 @@ metadata:
 spec:
   resourceGroup: platform-dev-$NAME
   server: fnhs-postgresqlserver-kratos-$NAME
-  startIpAddress: $IP_ADDRESS
-  endIpAddress: $IP_ADDRESS
+  startIpAddress: $HOME_IP_ADDRESS
+  endIpAddress: $HOME_IP_ADDRESS
 ---
 # Sneaky postgresql db in the hello-world namespace.
 # Writing it here because it reduces my iteration time (hello-world takes 10mins to build)
