@@ -4,7 +4,7 @@ metadata:
   name: postgresqlserver-hello-world
   namespace: hello-world
 spec:
-  resourceGroup: platform-dev
+  resourceGroup: platform-dev-$NAME
 ---
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLDatabase
