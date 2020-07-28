@@ -21,3 +21,11 @@ metadata:
   namespace: hello-world
 spec:
   resourceGroup: platform-dev
+---
+apiVersion: azure.microsoft.com/v1alpha1
+kind: PostgreSQLFirewallRule
+metadata:
+  name: postgresqlfirewallrule-hello-world
+  namespace: hello-world
+spec:
+  resourceGroup: platform-dev
