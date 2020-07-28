@@ -2,8 +2,8 @@ apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLServer
 metadata:
   # Must be globally unique across the whole of azure.
-  name: fnhs-postgresqlserver-david
-  namespace: postgresql
+  name: fnhs-postgresqlserver-kratos-david
+  namespace: kratos
 spec:
   location: westeurope
   resourceGroup: platform-dev-david
@@ -23,10 +23,10 @@ apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLFirewallRule
 metadata:
   name: postgresqlfirewallrule-wfh
-  namespace: postgresql
+  namespace: kratos
 spec:
   resourceGroup: platform-dev-david
-  server: fnhs-postgresqlserver-david
+  server: fnhs-postgresqlserver-kratos-david
   startIpAddress: 86.18.26.225
   endIpAddress: 86.18.26.225
 ---
@@ -35,21 +35,21 @@ spec:
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLDatabase
 metadata:
-  name: postgresqldatabase-hello-world
-  namespace: hello-world
+  name: postgresqldatabase-kratos
+  namespace: kratos
 spec:
   resourceGroup: platform-dev-david
-  server: postgresql/fnhs-postgresqlserver-david
+  server: fnhs-postgresqlserver-kratos-david
 ---
 # https://github.com/Azure/azure-service-operator/blob/217c62e5f65c94b753fa62c9a87eda210c1a8e5f/config/samples/azure_v1alpha1_postgresqluser.yaml
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLUser
 metadata:
-  name: psqluser-hello-world
-  namespace: hello-world
+  name: psqluser-kratos
+  namespace: kratos
 spec:
-  server: postgresql/fnhs-postgresqlserver-david
-  dbName: postgresqldatabase-hello-world
+  server: fnhs-postgresqlserver-kratos-david
+  dbName: postgresqldatabase-kratos
   resourceGroup: platform-dev-david
   # The Azure Database for PostgreSQL server is created with the 3 default roles defined.
   # azure_pg_admin
@@ -58,7 +58,7 @@ spec:
   roles:
     - "azure_pg_admin"
     # Specify a specific username for the user
-  username: psqluser-sample
+  username: psqluser-kratos
   # Specify adminSecret and adminSecretKeyVault if you want to
   # read the PSQL server admin creds from a specific keyvault secret
   # adminSecret: postgresqlserver-sample
