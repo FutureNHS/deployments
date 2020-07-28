@@ -1,7 +1,7 @@
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLServer
 metadata:
-  name: postgresqlserver-sample-declan
+  name: postgresqlserver-hello-world-declan
   namespace: hello-world
 spec:
   resourceGroup: platform-dev-declan
@@ -9,7 +9,7 @@ spec:
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLDatabase
 metadata:
-  name: postgresqldatabase-sample-declan
+  name: postgresqldatabase-hello-world-declan
   namespace: hello-world
 spec:
   resourceGroup: platform-dev-declan

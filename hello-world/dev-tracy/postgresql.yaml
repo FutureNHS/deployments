@@ -1,7 +1,7 @@
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLServer
 metadata:
-  name: postgresqlserver-sample-tracy
+  name: postgresqlserver-hello-world-tracy
   namespace: hello-world
 spec:
   resourceGroup: platform-dev-tracy
@@ -9,7 +9,7 @@ spec:
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLDatabase
 metadata:
-  name: postgresqldatabase-sample-tracy
+  name: postgresqldatabase-hello-world-tracy
   namespace: hello-world
 spec:
   resourceGroup: platform-dev-tracy

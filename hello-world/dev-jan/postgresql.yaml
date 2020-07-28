@@ -1,7 +1,7 @@
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLServer
 metadata:
-  name: postgresqlserver-sample-jan
+  name: postgresqlserver-hello-world-jan
   namespace: hello-world
 spec:
   resourceGroup: platform-dev-jan
@@ -9,7 +9,7 @@ spec:
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLDatabase
 metadata:
-  name: postgresqldatabase-sample-jan
+  name: postgresqldatabase-hello-world-jan
   namespace: hello-world
 spec:
   resourceGroup: platform-dev-jan

@@ -1,7 +1,7 @@
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLServer
 metadata:
-  name: postgresqlserver-sample-potts
+  name: postgresqlserver-hello-world-potts
   namespace: hello-world
 spec:
   resourceGroup: platform-dev-potts
@@ -9,7 +9,7 @@ spec:
 apiVersion: azure.microsoft.com/v1alpha1
 kind: PostgreSQLDatabase
 metadata:
-  name: postgresqldatabase-sample-potts
+  name: postgresqldatabase-hello-world-potts
   namespace: hello-world
 spec:
   resourceGroup: platform-dev-potts
