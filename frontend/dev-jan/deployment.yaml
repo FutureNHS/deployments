@@ -8,5 +8,5 @@ spec:
       containers:
         - name: frontend
           env:
-          - name: NEXT_PUBLIC_INSTRUMENTATION_KEY
-            value: "14fe00c5-310f-4e84-aa83-5db7bd5b2797"
+            - name: NEXT_PUBLIC_INSTRUMENTATION_KEY
+              value: "14fe00c5-310f-4e84-aa83-5db7bd5b2797"
