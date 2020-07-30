@@ -5,5 +5,5 @@ patchesStrategicMerge:
 resources:
 - ../base
 images:
-- digest: sha256:f169f8f014cdbc9b46321b1f7101285c608e103a393e03079aec79b9cbf27347
+- digest: sha256:dbdc30bf3ca5864ebf61248ff214e3c3e5b6a166555ccfbd2b4ec4aa96db9d96
   name: fnhsproduction.azurecr.io/frontend
