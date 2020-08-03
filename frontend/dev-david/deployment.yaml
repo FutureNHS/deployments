@@ -9,4 +9,4 @@ spec:
         - name: frontend
           env:
             - name: NEXT_PUBLIC_INSTRUMENTATION_KEY
-              value: "todo"
+              value: "a8da8ece-72c3-4711-a72f-83049651f298"
