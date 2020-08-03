@@ -1,6 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-  - ../base
 patchesStrategicMerge:
-  - deployment.yaml
+- deployment.yaml
+resources:
+- ../base
+images:
+- digest: sha256:dba368f779b20d96a924c25230f1693e72e186160f7a6867c48f14dabd2949f6
+  name: fnhsproduction.azurecr.io/frontend
