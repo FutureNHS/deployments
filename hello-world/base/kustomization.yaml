@@ -1,9 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- namespace.yaml
-- deployment.yaml
-- service.yaml
-images:
-- digest: sha256:f7b0ff1f0056412d3e865da6f15dbb694c81658093969f772300a521c7282a39
-  name: fnhsproduction.azurecr.io/hello-world
+  - namespace.yaml
+  - deployment.yaml
+  - service.yaml
