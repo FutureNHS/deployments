@@ -9,7 +9,7 @@ spec:
         - name: hello-world
           env:
             - name: INSTRUMENTATION_KEY
-              value: "14fe00c5-310f-4e84-aa83-5db7bd5b2797"
+              value: "53bd5e02-2b32-47f5-989d-09f7b16a396f"
             - name: FAVOURITE_CUISINE
               valueFrom:
                 secretKeyRef:
