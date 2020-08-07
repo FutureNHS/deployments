@@ -15,6 +15,12 @@ spec:
       containers:
         - name: frontend
           image: fnhsproduction.azurecr.io/frontend
+          env:
+            - name: NEXT_PUBLIC_INSTRUMENTATION_KEY
+              valueFrom:
+                configMapKeyRef:
+                  name: telemetry
+                  key: instrumentation_key
           ports:
             - containerPort: 3000
           resources:
