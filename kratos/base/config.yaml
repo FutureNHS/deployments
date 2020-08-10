@@ -7,7 +7,7 @@ serve:
     port: 4434
 
 selfservice:
-  default_browser_return_url: /workspaces/private
+  default_browser_return_url: /
   whitelisted_return_urls:
     - /
 
