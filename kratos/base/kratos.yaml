@@ -95,6 +95,19 @@ spec:
         - name: kratos-config-volume
           configMap:
             name: kratos-config
+            items:
+              - key: identity.traits.schema.json
+                path: identity.traits.schema.json
+              - key: config.yaml
+                path: config.yaml
+              - key: courier-templates_recovery_valid_email.body.gotmpl
+                path: courier-templates/recovery/valid/email.body.gotmpl
+              - key: courier-templates_recovery_valid_email.subject.gotmpl
+                path: courier-templates/recovery/valid/email.subject.gotmpl
+              - key: courier-templates_recovery_invalid_email.body.gotmpl
+                path: courier-templates/recovery/invalid/email.body.gotmpl
+              - key: courier-templates_recovery_invalid_email.subject.gotmpl
+                path: courier-templates/recovery/invalid/email.subject.gotmpl
       containers:
         - name: kratos
           image: "fnhsproduction.azurecr.io/kratos:v0.4.6-alpha.1-98-gc13b1838-merged-with-uri-reference-for-ui_url-ga42cd2bd"
@@ -134,6 +147,8 @@ spec:
                 secretKeyRef:
                   name: sendgrid
                   key: connection_uri
+            - name: COURIER_TEMPLATE_OVERRIDE_PATH
+              value: /etc/config/courier-templates
           ports:
             - name: http-admin
               containerPort: 4434

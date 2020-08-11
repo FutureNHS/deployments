@@ -4,3 +4,12 @@ bases:
   - ../base
 resources:
   - sendgrid-sealed.yaml
+configMapGenerator:
+  - name: kratos-config
+    namespace: kratos
+    behavior: merge
+    files:
+      - courier-templates_recovery_valid_email.body.gotmpl
+      - courier-templates_recovery_valid_email.subject.gotmpl
+      - courier-templates_recovery_invalid_email.body.gotmpl
+      - courier-templates_recovery_invalid_email.subject.gotmpl
