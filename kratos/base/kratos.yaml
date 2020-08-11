@@ -129,6 +129,11 @@ spec:
                 secretKeyRef:
                   name: kratos
                   key: secretsCookie
+            - name: COURIER_SMTP_CONNECTION_URI
+              valueFrom:
+                secretKeyRef:
+                  name: sendgrid
+                  key: connection_uri
           ports:
             - name: http-admin
               containerPort: 4434

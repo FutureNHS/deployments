@@ -56,4 +56,6 @@ identity:
 
 courier:
   smtp:
+    # overridden by envrionment variable COURIER_SMTP_CONNECTION_URI which is
+    # stored in sendgrid-sealed.yaml
     connection_uri: smtps://test:test@mailslurper.kratos:1025/?skip_ssl_verify=true
