@@ -7,6 +7,3 @@ spec:
     spec:
       containers:
         - name: workspace-service
-          env:
-            - name: INSTRUMENTATION_KEY
-              value: "b9ba8f32-a8f1-471b-9bc2-a1c7a74bc6c0"
