@@ -5,5 +5,5 @@ patchesStrategicMerge:
 resources:
 - ../base
 images:
-- digest: sha256:88240b2264c02fe12605f885375ba08374baa6f9daffc69ab7702930a788294c
+- digest: sha256:7409129db3ed2cb052d6aaab477fb2e9d4b2d4f98f2650c1fc66a6d45963f984
   name: fnhsproduction.azurecr.io/workspace-service
