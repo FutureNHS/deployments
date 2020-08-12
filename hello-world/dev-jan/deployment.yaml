@@ -8,8 +8,6 @@ spec:
       containers:
         - name: hello-world
           env:
-            - name: INSTRUMENTATION_KEY
-              value: "53bd5e02-2b32-47f5-989d-09f7b16a396f"
             - name: FAVOURITE_CUISINE
               valueFrom:
                 secretKeyRef:

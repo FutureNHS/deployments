@@ -5,5 +5,5 @@ resources:
 - deployment.yaml
 - service.yaml
 images:
-- digest: sha256:33855940a7a85a8869c715d25b75cc30080eb1f52686679a2336797f8740b2de
+- digest: sha256:af5faffce3a2279299be427f7ff30367e935bdd4e427926e1304c0ea324d63e0
   name: fnhsproduction.azurecr.io/hello-world
