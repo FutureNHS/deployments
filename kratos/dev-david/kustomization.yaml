@@ -4,6 +4,8 @@ bases:
   - ../base
 resources:
   - sendgrid-sealed.yaml
+patchesStrategicMerge:
+  - kratos.yaml
 configMapGenerator:
   - name: kratos-config
     namespace: kratos
