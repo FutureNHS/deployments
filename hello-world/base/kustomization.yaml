@@ -1,9 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-  # There is no namespace.yaml because this is managed by terraform.
 resources:
-- deployment.yaml
-- service.yaml
-images:
-- digest: sha256:af5faffce3a2279299be427f7ff30367e935bdd4e427926e1304c0ea324d63e0
-  name: fnhsproduction.azurecr.io/hello-world
+  # There is no namespace.yaml because this is managed by terraform.
+  - deployment.yaml
+  - service.yaml
