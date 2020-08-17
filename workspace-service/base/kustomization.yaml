@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
 - deployment.yaml
 images:
-- digest: sha256:c612d2851a928c78222a8992ff3a32a3034cbeb0d4c2dae60530ccd235b264ca
+- digest: sha256:fd406585e5b71fe2272c11ecf74ba78035bcf1066fd2578b0cd6a7b0f001e61a
   name: fnhsproduction.azurecr.io/workspace-service
