@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
 - ../base
 images:
-- digest: sha256:13df873bf3a76dfc6007171bcc9cf75da8940ac26fe1ba0498965a54250f78c1
+- digest: sha256:c90e1c3f1131a52c33e36d900aec2d5e154e05540d45cc0a5053962f89834a16
   name: fnhsproduction.azurecr.io/frontend
