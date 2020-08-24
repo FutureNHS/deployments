@@ -1,4 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-  - ../base
+resources:
+- ../base
+images:
+- digest: sha256:75a6b33943effc1155e1907e6eeae9152bdcb5dd653352dcb31c43a3cb129f71
+  name: fnhsproduction.azurecr.io/frontend
