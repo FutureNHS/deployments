@@ -46,6 +46,11 @@ spec:
                 configMapKeyRef:
                   name: telemetry
                   key: instrumentation_key
+            - name: PG_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: frontend
+                  key: postgresPassword
           ports:
             - containerPort: 3000
           resources:
