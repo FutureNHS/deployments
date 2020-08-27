@@ -8,5 +8,5 @@ spec:
       containers:
         - name: frontend
           env:
-            - name: NEXT_PUBLIC_INSTRUMENTATION_KEY
-              value: "todo"
+            - name: ORIGIN
+              value: https://fnhs-dev-tracy.westeurope.cloudapp.azure.com
