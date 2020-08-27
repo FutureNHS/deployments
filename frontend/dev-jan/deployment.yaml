@@ -8,5 +8,5 @@ spec:
       containers:
         - name: frontend
           env:
-            - name: NEXT_PUBLIC_INSTRUMENTATION_KEY
-              value: "53bd5e02-2b32-47f5-989d-09f7b16a396f"
+            - name: ORIGIN
+              value: https://fnhs-dev-jan.westeurope.cloudapp.azure.com
