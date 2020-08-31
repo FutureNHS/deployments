@@ -1,7 +1,4 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- deployment.yaml
-images:
-- digest: sha256:1936f4cfe04d60c7ffa37872bd6fb4d0127860e2cc7702cdb06eaa5be808cc77
-  name: fnhsproduction.azurecr.io/workspace-service
+  - deployment.yaml
