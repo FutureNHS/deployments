@@ -5,5 +5,5 @@ resources:
 - service.yaml
 - deployment.yaml
 images:
-- digest: sha256:69125831e0f23491bcc61a67ba4bb305804fdcb291b3b8cf94c88c8fb340eff8
+- digest: sha256:05e2eb0fe66d662f6e571ab62069c2493354e20086c08a129f0522afaf3467a5
   name: fnhsproduction.azurecr.io/frontend
