@@ -4,5 +4,5 @@ resources:
 - deployment.yaml
 - service.yaml
 images:
-- digest: sha256:bb46030ffc3d70078f91857d354bf9b737a0843b0d5b522b52328463dea91f02
+- digest: sha256:7a33ad2a5c2730825d2f3533a856a12f5dc6d69df417355adeee9b2571c93169
   name: fnhsproduction.azurecr.io/workspace-service
