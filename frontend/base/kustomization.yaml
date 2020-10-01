@@ -4,7 +4,8 @@ kind: Kustomization
 resources:
 - service.yaml
 - deployment.yaml
+- config-map.yaml
 - poddisruptionbudget.yaml
 images:
-- digest: sha256:6fba0dce9d3f2397a49be8b5d07e40e33c548ac440d5af3cfde8c9bb0b823f67
+- digest: sha256:4c2e4d99b64c80afd1e29e858f397dd9b8a5c9494e4f35c13482a71779c82b1c
   name: fnhsproduction.azurecr.io/frontend
