@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
+- poddisruptionbudget.yaml
 images:
-- digest: sha256:4be2b93710f73c0de28c750f556c9bab498a975e4b3a0254090296bc3a821ef9
+- digest: sha256:c43a8703895a3cf28cc9815deac3196ad4f32dddc60e1d6922ee31fbe249424e
   name: fnhsproduction.azurecr.io/workspace-service
