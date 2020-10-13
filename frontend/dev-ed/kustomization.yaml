@@ -6,5 +6,5 @@ resources:
 patchesStrategicMerge:
 - deployment.yaml
 images:
-- digest: sha256:a5d7964af61b25e8135a86fadf2ff218a8434c5058bfe2d84f6f486f0a2ad275
+- digest: sha256:73348f2b7c70bba0ef289207b475eace04b6f02dc9ba3af428bae5bd44e11acc
   name: fnhsproduction.azurecr.io/frontend
