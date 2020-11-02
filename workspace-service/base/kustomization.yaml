@@ -1,9 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- deployment.yaml
-- service.yaml
-- poddisruptionbudget.yaml
-images:
-- digest: sha256:55bfd4e36168ef230a787995b150d79a06e72f5e880bad6370e8917798f3e9e8
-  name: fnhsproduction.azurecr.io/workspace-service
+  - deployment.yaml
+  - service.yaml
+  - poddisruptionbudget.yaml
