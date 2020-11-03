@@ -5,5 +5,5 @@ resources:
 - service.yaml
 - poddisruptionbudget.yaml
 images:
-- digest: sha256:e16d8eed540908904745fe417ddd15c7eaef16e17822f2f6c0d8911f1b86817c
+- digest: sha256:3a8e846af15660518c5225b6b9cf07a3fcd92eb37e9935295e4dbe999bf695fd
   name: fnhsproduction.azurecr.io/workspace-service
