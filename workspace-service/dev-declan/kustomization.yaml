@@ -1,4 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-  - ../base
+resources:
+- ../base
+images:
+- digest: sha256:8b922eac490dd3158bb210aac4118c61fbae97dff52018b267208c0587bf23a2
+  name: fnhsproduction.azurecr.io/workspace-service
