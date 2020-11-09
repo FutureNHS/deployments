@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
 - ../base
 images:
-- digest: sha256:d5ac7913acfcd65bff336e524c27167cd3e822d769ef6c3247503efb11d595b4
+- digest: sha256:68ca5bb133075a77eadf6b2d821b944cb9253b2cde18d32c4c9044a27ec49ede
   name: fnhsproduction.azurecr.io/workspace-service
