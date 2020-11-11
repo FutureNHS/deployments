@@ -7,5 +7,5 @@ resources:
 - config-map.yaml
 - poddisruptionbudget.yaml
 images:
-- digest: sha256:94fc0495016adc5c9bde6c455005808d091e61fc14af3f932c092b5c2dedda79
+- digest: sha256:d13ac2b6b8d60721817c648f11180c346654cec8ce86a5d819bb498abff0244a
   name: fnhsproduction.azurecr.io/frontend
